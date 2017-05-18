@@ -107,9 +107,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3726" top="333" width="795" height="240">
+   <BOUNDS type="Box" left="2766" top="363" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3726" top="333" width="0" height="0">
+   <BOUNDS type="Node" left="2766" top="363" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0.391912204446271,-0.0211316025815904,0.0820732533466071,0.445343941450119">
    </PIN>
@@ -123,9 +123,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4605" top="336" width="795" height="240">
+   <BOUNDS type="Box" left="3585" top="381" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4605" top="336" width="0" height="0">
+   <BOUNDS type="Node" left="3585" top="381" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3600">
    </PIN>
@@ -535,9 +535,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1860" top="225" width="795" height="240">
+   <BOUNDS type="Box" left="4605" top="375" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1860" top="225" width="0" height="0">
+   <BOUNDS type="Node" left="4605" top="375" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -551,7 +551,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Unzip (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (Value)" componentmode="Hidden" id="47">
-   <BOUNDS type="Node" left="1860" top="630" width="100" height="100">
+   <BOUNDS type="Node" left="4590" top="750" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
