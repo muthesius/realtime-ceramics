@@ -1,0 +1,429 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\Student\Desktop\PrinterController_0.1\sub\SerialSetup.v4p" systemname="SerialSetup" filename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\SerialSetup.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="21525" top="0" width="5775" height="12225">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   <NODE systemname="RS232 (Devices)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="RS232 (Devices)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1224" top="4140" width="2028" height="276">
+   </BOUNDS>
+   <PIN pinname="Port Name" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Connected" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Do Send" visible="1">
+   </PIN>
+   <PIN pinname="DSR State" visible="1">
+   </PIN>
+   <PIN pinname="On Data" visible="1">
+   </PIN>
+   <PIN pinname="Break State" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Baudrate" visible="1">
+   </PIN>
+   <PIN pinname="DTR Enable" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="RTS Enable" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Parity" visible="1" slicecount="1" values="Space">
+   </PIN>
+   <PIN pinname="Handshake" visible="1" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Update Port List" visible="1">
+   </PIN>
+   <PIN pinname="DCD State" visible="1">
+   </PIN>
+   <PIN pinname="CTS State" visible="1">
+   </PIN>
+   <PIN pinname="RI State" visible="1">
+   </PIN>
+   <PIN pinname="Data Bits" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Stop Bits" slicecount="1" values="Two">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3528" top="3312" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3528" top="3312" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3552" top="4776" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3552" top="4776" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Connected">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsRaw (String)" nodename="AsRaw (String)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="384" top="3264" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|G1 X10 Y10|">
+   </PIN>
+   <PIN pinname="Encoding" slicecount="1" visible="1" values="utf-8">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1404" top="1764" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1404" top="1764" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Do Send|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3192" top="12333" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3192" top="12333" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|On Data|">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1572" top="2904" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1572" top="2904" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="115200">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Baudrate">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2880" top="1908" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2880" top="1908" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Update Port List|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="20" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="3012" top="2640" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3012" top="2640" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="COM1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Port Name|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="0" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Do Send">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Baudrate">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Update Port List">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="0" dstpinname="Port Name">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Connected" dstnodeid="2" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="21" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="384" top="288" width="3432" height="360">
+   </BOUNDS>
+   <BOUNDS type="Node" left="384" top="288" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|G1 X10 Y10|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="23" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2472" top="8844" width="2925" height="1395">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2472" top="8844" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Console">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="742" values="|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|k&lf;|,o,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|&lf;|,ok,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|k&lf;|,o,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;|,|ok&lf;ok&lf;ok&lf;echo:Unknown command: &quot; &quot;&lf;ok&lf;ok&lf;ok&lf;|,|ok&lf;|,|echo:Unknown command: &quot;&quot;&lf;ok&lf;|">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="24" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="1020" top="1068" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1020" top="1068" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="us-ascii">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Output Enum" dstnodeid="3" dstpinname="Encoding">
+   </LINK>
+   <NODE systemname="Tokenizer (String)" nodename="Tokenizer (String)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="312" top="6840" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Separator" visible="1">
+   </PIN>
+   <PIN pinname="Queue Mode" slicecount="1" values="Enqueue">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Update" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Token Length" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Ord (String)" nodename="Ord (String)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="576" top="5928" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Format" slicecount="1" values="HexUnsigned8Bit">
+   </PIN>
+   <PIN pinname="Input" slicecount="1" visible="1" values="A">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="SpellValue (String)" nodename="SpellValue (String)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="588" top="6324" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="Ascii">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="34" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="27" dstpinname="Separator">
+   </LINK>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="312" top="8280" width="852" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="ok">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="312" top="9048" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="36" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Subtract (String)" nodename="Subtract (String)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="324" top="7416" width="528" height="276">
+   </BOUNDS>
+   <PIN pinname="Operand 2" visible="1">
+   </PIN>
+   <PIN pinname="Operand 1" visible="1">
+   </PIN>
+   <PIN pinname="Result" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Output" dstnodeid="38" dstpinname="Operand 2">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="38" dstpinname="Operand 1">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Result" dstnodeid="35" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="39" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="576" top="5568" width="540" height="252">
+   </BOUNDS>
+   <BOUNDS type="Node" left="576" top="5568" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="0A">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Output String" dstnodeid="31" dstpinname="Input">
+   </LINK>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="29">
+   <BOUNDS type="Node" left="2472" top="8316" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="23" dstpinname="Input String">
+   </LINK>
+   <NODE id="22" systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden">
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="384" top="4764" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Encoding" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="22" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output Enum" dstnodeid="22" dstpinname="Encoding">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="27" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="300" top="9516" width="1380" height="276">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1632" top="8760" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1632" top="8760" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="InitBang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="40" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="300" top="10164" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="40" srcpinname="Output" dstnodeid="43" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="On Data" dstnodeid="29" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="29" dstpinname="Input">
+   </LINK>
+   <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="3180" top="11970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Output 1" dstnodeid="7" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Up Edge" dstnodeid="46" dstpinname="Input 1">
+   </LINK>
+   </PATCH>

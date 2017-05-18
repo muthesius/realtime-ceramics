@@ -1,0 +1,115 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\PrepareGCode.v4p" systemname="PrepareGCode" filename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\PrepareGCode.v4p">
+   <NODE systemname="FormatValue (String)" nodename="FormatValue (String)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="1500" top="2676" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Characters after Comma" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="2100">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="333" top="4221" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="333" top="4221" width="4656" height="600">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="1" slicecount="5" values="|G1 F0 X2100 Y152.213 Z102.500 E0.000|,|G1 F0 X152.212 Y152.213 Z102.500 E0.000|,|G1 F0 X102.500 Y152.213 Z102.500 E0.000|,|G1 F0 X0.000 Y152.213 Z102.500 E0.000|,|G1 F0 X0.000 Y152.213 Z102.500 E0.000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|GCode Line|">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="16110" top="4575" width="5820" height="6255">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Node" left="1518" top="390" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1518" top="390" width="795" height="960">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="5" values="0,0,0,1,0">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0, 0, 1|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XYZEF">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="15">
+   <BOUNDS type="Node" left="330" top="330" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="330" top="330" width="840" height="1440">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="5" values="|G1 F|,| X|,| Y|,| Z|,| E|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Zip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Zip (String)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="345" top="3165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2610" top="375" width="945" height="1215">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2610" top="375" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="0,3,3,3,3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="5">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Characters after Comma" linkstyle="VHV">
+   <LINKPOINT x="2610" y="2123">
+   </LINKPOINT>
+   <LINKPOINT x="1920" y="2123">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="16" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Add (String Spectral)" nodename="Add (String Spectral)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="345" top="3555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="18" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="11" dstpinname="Input String">
+   </LINK>
+   </PATCH>
