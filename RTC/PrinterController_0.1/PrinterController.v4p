@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\Student\Documents\Git\realtime-ceramics\RTC\PrinterController_0.1\PrinterController.v4p" scrollx="0" scrolly="-360" systemname="PrinterController" filename="C:\Users\Lars\OneDrive\Dokumente\my patches\PrinterControl\PrinterController.v4p">
-   <BOUNDS type="Window" left="8520" top="0" width="20250" height="15135">
+   <BOUNDS type="Window" left="8520" top="0" width="20250" height="14280">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
@@ -331,9 +331,9 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="275" systemname="IOBox (String)">
    <BOUNDS type="Node" left="7785" top="195" width="570" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7785" top="195" width="690" height="13155">
+   <BOUNDS type="Box" left="7785" top="195" width="660" height="8715">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;&lt;&lt;&lt;&cr;&lf;PLAY&cr;&lf;ZONE&cr;&lf;&lt;&lt;&lt;&lt;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&lt;&lt;&lt;&lt;&cr;&lf;PLAY&cr;&lf;ZONE&cr;&lf;&lt;&lt;&lt;&lt;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;&lt;&lt;&lt;&cr;&lf;PLAY&cr;&lf;ZONE&cr;&lf;&lt;&lt;&lt;&lt;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;&lt;&lt;&lt;&lt;&cr;&lf;PLAY&cr;&lf;ZONE&cr;&lf;&lt;&lt;&lt;&lt;&cr;&lf;&cr;&lf;&cr;&lf;&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -621,7 +621,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="314" srcpinname="Output" dstnodeid="257" dstpinname="XYZEF spread" hiddenwhenlocked="1">
-   <LINKPOINT x="7680" y="13260">
+   <LINKPOINT x="7680" y="12225">
    </LINKPOINT>
    <LINKPOINT x="7665" y="3255">
    </LINKPOINT>
@@ -701,9 +701,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="330" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9675" top="4050" width="285" height="240">
+   <BOUNDS type="Box" left="9675" top="4110" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9675" top="4050" width="0" height="0">
+   <BOUNDS type="Node" left="9675" top="4110" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -725,7 +725,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.472972972972973">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.797297297297297">
    </PIN>
    <PIN pinname="Show Slider" slicecount="1" values="1">
    </PIN>
@@ -733,7 +733,7 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0.270833333333334">
+   <PIN pinname="X Input Value" slicecount="1" values="0.291666666666667">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ShowSlice">
    </PIN>
