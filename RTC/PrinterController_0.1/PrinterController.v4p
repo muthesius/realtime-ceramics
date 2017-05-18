@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Student\Desktop\PrinterController_0.1\PrinterController.v4p" scrollx="0" scrolly="-360" systemname="PrinterController" filename="C:\Users\Lars\OneDrive\Dokumente\my patches\PrinterControl\PrinterController.v4p">
+   <PATCH nodename="C:\Users\Student\Documents\Git\realtime-ceramics\RTC\PrinterController_0.1\PrinterController.v4p" scrollx="0" scrolly="-360" systemname="PrinterController" filename="C:\Users\Lars\OneDrive\Dokumente\my patches\PrinterControl\PrinterController.v4p">
    <BOUNDS type="Window" left="1230" top="405" width="20250" height="15135">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
@@ -191,9 +191,9 @@
    <LINK srcnodeid="242" srcpinname="Y Output Value" dstnodeid="231" dstpinname="Factor">
    </LINK>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="259">
-   <BOUNDS type="Node" left="9180" top="6960" width="100" height="100">
+   <BOUNDS type="Node" left="11715" top="7170" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9180" top="6960" width="9000" height="8610">
+   <BOUNDS type="Box" left="11715" top="7170" width="9000" height="8610">
    </BOUNDS>
    <BOUNDS type="Window" left="21855" top="585" width="8670" height="9195">
    </BOUNDS>
@@ -489,7 +489,7 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0" visible="-1" pintype="Input">
+   <PIN pinname="X Input Value" slicecount="1" visible="-1" pintype="Input" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="284" systemname="IOBox (Value Advanced)">
@@ -835,7 +835,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Camera (Transform Softimage)" filename="%VVVV%\lib\nodes\modules\Transform\Camera (Transform Softimage).v4p" nodename="Camera (Transform Softimage)" componentmode="Hidden" id="309">
-   <BOUNDS type="Node" left="10140" top="6345" width="100" height="100">
+   <BOUNDS type="Node" left="12675" top="6555" width="100" height="100">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="309" srcpinname="View" dstnodeid="259" dstpinname="View">
