@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
-   <PATCH nodename="C:\Users\Student\Desktop\PrinterController_0.1\sub\SerialSetup.v4p" systemname="SerialSetup" filename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\SerialSetup.v4p" scrollx="0" scrolly="-360">
-   <BOUNDS type="Window" left="21525" top="0" width="5775" height="12225">
+   <PATCH nodename="C:\Users\Student\Documents\Git\realtime-ceramics\RTC\PrinterController_0.1\sub\SerialSetup.v4p" systemname="SerialSetup" filename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\SerialSetup.v4p" scrollx="0" scrolly="3600">
+   <BOUNDS type="Window" left="5580" top="1680" width="7005" height="13905">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
@@ -49,9 +49,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3528" top="3312" width="480" height="480">
+   <BOUNDS type="Box" left="4983" top="312" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3528" top="3312" width="0" height="0">
+   <BOUNDS type="Node" left="4983" top="312" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -69,9 +69,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3552" top="4776" width="480" height="480">
+   <BOUNDS type="Box" left="4557" top="12306" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3552" top="4776" width="0" height="0">
+   <BOUNDS type="Node" left="4557" top="12306" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -115,9 +115,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3192" top="12333" width="480" height="480">
+   <BOUNDS type="Box" left="417" top="12438" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3192" top="12333" width="0" height="0">
+   <BOUNDS type="Node" left="417" top="12438" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -135,9 +135,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1572" top="2904" width="792" height="240">
+   <BOUNDS type="Box" left="3432" top="2784" width="792" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1572" top="2904" width="0" height="0">
+   <BOUNDS type="Node" left="3432" top="2784" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="115200">
    </PIN>
@@ -151,9 +151,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="2880" top="1908" width="480" height="480">
+   <BOUNDS type="Box" left="2175" top="1803" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="2880" top="1908" width="0" height="0">
+   <BOUNDS type="Node" left="2175" top="1803" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -171,9 +171,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="20" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="3012" top="2640" width="1596" height="276">
+   <BOUNDS type="Box" left="2622" top="1305" width="1596" height="276">
    </BOUNDS>
-   <BOUNDS type="Node" left="3012" top="2640" width="0" height="0">
+   <BOUNDS type="Node" left="2622" top="1305" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="COM1">
    </PIN>
@@ -190,7 +190,11 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="0" dstpinname="Port Name">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled">
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Enabled" linkstyle="VHV">
+   <LINKPOINT x="5010" y="3960">
+   </LINKPOINT>
+   <LINKPOINT x="3225" y="3960">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="0" srcpinname="Connected" dstnodeid="2" dstpinname="Y Input Value">
    </LINK>
@@ -215,9 +219,9 @@
    <LINK srcnodeid="21" srcpinname="Output String" dstnodeid="3" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="23" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2472" top="8844" width="2925" height="1395">
+   <BOUNDS type="Box" left="2067" top="12414" width="1935" height="615">
    </BOUNDS>
-   <BOUNDS type="Node" left="2472" top="8844" width="0" height="0">
+   <BOUNDS type="Node" left="2067" top="12414" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -339,7 +343,7 @@
    <LINK srcnodeid="39" srcpinname="Output String" dstnodeid="31" dstpinname="Input">
    </LINK>
    <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="29">
-   <BOUNDS type="Node" left="2472" top="8316" width="100" height="100">
+   <BOUNDS type="Node" left="2697" top="8841" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Set" visible="1" slicecount="1" values="0">
    </PIN>
@@ -415,7 +419,7 @@
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="29" dstpinname="Input">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="46">
-   <BOUNDS type="Node" left="3180" top="11970" width="100" height="100">
+   <BOUNDS type="Node" left="405" top="12075" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>

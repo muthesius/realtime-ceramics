@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.103.dtd" >
-   <PATCH nodename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\StartEndPreSelect.v4p" systemname="StartEndPreSelect" filename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\StartEndPreSelect.v4p" scrollx="0" scrolly="-360">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="C:\Users\Student\Documents\Git\realtime-ceramics\RTC\PrinterController_0.1\sub\StartEndPreSelect.v4p" systemname="StartEndPreSelect" filename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\StartEndPreSelect.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2235" top="3855" width="100" height="100">
    </BOUNDS>
@@ -25,7 +25,7 @@
    </PIN>
    </NODE>
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="1110" top="3060" width="100" height="100">
+   <BOUNDS type="Node" left="840" top="3045" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="-1">
    </PIN>
@@ -49,9 +49,9 @@
    <NODE id="4" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
    <PIN pinname="Descriptive Name" slicecount="1" values="Count">
    </PIN>
-   <BOUNDS type="Box" left="3210" top="485" width="750" height="240">
+   <BOUNDS type="Box" left="2925" top="515" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3210" top="485" width="750" height="240">
+   <BOUNDS type="Node" left="2925" top="515" width="750" height="240">
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -114,9 +114,9 @@
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="9" dstpinname="Input String">
    </LINK>
-   <BOUNDS type="Window" left="20355" top="7215" width="6525" height="6585">
+   <BOUNDS type="Window" left="14835" top="3285" width="6525" height="7455">
    </BOUNDS>
-   <PACK Name="addonpack" Version="34.101.0">
+   <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input 1">
    </LINK>
@@ -135,7 +135,7 @@
    <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="13">
    <BOUNDS type="Node" left="750" top="2175" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="-2">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
    </PIN>
@@ -166,4 +166,48 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Input 1">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="285" top="2520" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="285" top="2520" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4680" top="4035" width="1350" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4680" top="4035" width="1350" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|idle pre run post|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4545" top="4290" width="645" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4545" top="4290" width="645" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="0.1.2.3">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
