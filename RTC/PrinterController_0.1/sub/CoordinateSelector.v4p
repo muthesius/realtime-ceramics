@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\Student\Documents\Git\realtime-ceramics\RTC\PrinterController_0.1\sub\CoordinateSelector.v4p" systemname="CoordinateSelector" filename="C:\Users\Admin\OneDrive\Dokumente\my patches\PrinterController_0.1\sub\CoordinateSelector.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="780" top="6645" width="100" height="100">
+   <BOUNDS type="Node" left="780" top="6645" width="885" height="270">
    </BOUNDS>
    <PIN pinname="Index" visible="1" slicecount="1" values="9">
    </PIN>
@@ -162,14 +162,14 @@
    <LINKPOINT x="4935" y="3533">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="1755" top="4650" width="10770" height="10545">
+   <BOUNDS type="Window" left="1755" top="4650" width="12660" height="10545">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1110" top="5730" width="795" height="240">
+   <BOUNDS type="Box" left="1200" top="6210" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1110" top="5730" width="0" height="0">
+   <BOUNDS type="Node" left="1200" top="6210" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="5">
    </PIN>
@@ -493,47 +493,47 @@
    </PIN>
    </NODE>
    <NODE systemname="StartEndPreSelect" filename="StartEndPreSelect.v4p" nodename="StartEndPreSelect.v4p" componentmode="Hidden" id="42">
-   <BOUNDS type="Node" left="3877" top="8013" width="0" height="0">
+   <BOUNDS type="Node" left="1627" top="8013" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1592" top="6058" width="4570" height="3910">
+   <BOUNDS type="Box" left="0" top="6058" width="4570" height="3910">
    </BOUNDS>
    <BOUNDS type="Window" left="14835" top="3285" width="6525" height="7455">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Output String" dstnodeid="42" dstpinname="Input 2 2" linkstyle="VHV">
-   <LINKPOINT x="8550" y="7575">
+   <LINKPOINT x="7800" y="7575">
    </LINKPOINT>
-   <LINKPOINT x="5340" y="7575">
+   <LINKPOINT x="3840" y="7575">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="42" srcpinname="Output" dstnodeid="32" dstpinname="Input String" linkstyle="VHV">
-   <LINKPOINT x="3870" y="8520">
+   <LINKPOINT x="2370" y="8520">
    </LINKPOINT>
-   <LINKPOINT x="780" y="8520">
+   <LINKPOINT x="30" y="8520">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="1" srcpinname="Output" dstnodeid="42" dstpinname="Count" linkstyle="VHV">
-   <LINKPOINT x="3930" y="6668">
+   <LINKPOINT x="3180" y="6668">
    </LINKPOINT>
-   <LINKPOINT x="4605" y="6668">
+   <LINKPOINT x="3105" y="6668">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="36" srcpinname="Output" dstnodeid="42" dstpinname="Max+1" linkstyle="Bezier">
-   <LINKPOINT x="460" y="5820">
+   <LINKPOINT x="450" y="5910">
    </LINKPOINT>
-   <LINKPOINT x="4220" y="5970">
+   <LINKPOINT x="1995" y="5910">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="31" srcpinname="GCode Line" dstnodeid="42" dstpinname="String" linkstyle="VHV">
-   <LINKPOINT x="795" y="7845">
+   <LINKPOINT x="45" y="7845">
    </LINKPOINT>
-   <LINKPOINT x="3900" y="7845">
+   <LINKPOINT x="2400" y="7845">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="42" dstpinname="Start GCode" linkstyle="VHV">
-   <LINKPOINT x="8055" y="7395">
+   <LINKPOINT x="7305" y="7395">
    </LINKPOINT>
-   <LINKPOINT x="4980" y="7395">
+   <LINKPOINT x="3480" y="7395">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44" systemname="IOBox (Value Advanced)">

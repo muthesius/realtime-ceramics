@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\Student\Documents\Git\realtime-ceramics\RTC\PrinterController_0.1\sub\Unzip (3dprint).v4p" systemname="Unzip (3dprint)" filename="C:\Users\Student\Documents\Git\realtime-ceramics\RTC\PrinterController_0.1\sub\Unzip (3dprint).v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="18945" top="4500" width="9000" height="6000">
+   <BOUNDS type="Window" left="825" top="9300" width="9000" height="6000">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
@@ -109,9 +109,9 @@
    <LINK srcnodeid="23" srcpinname="Count" dstnodeid="22" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="32" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="585" top="4305" width="795" height="240">
+   <BOUNDS type="Box" left="630" top="4245" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="585" top="4305" width="0" height="0">
+   <BOUNDS type="Node" left="630" top="4245" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
    </PIN>
@@ -123,9 +123,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1800" top="4320" width="795" height="240">
+   <BOUNDS type="Box" left="1680" top="4245" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1800" top="4320" width="0" height="0">
+   <BOUNDS type="Node" left="1680" top="4245" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -137,9 +137,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3045" top="4350" width="795" height="240">
+   <BOUNDS type="Box" left="2745" top="4245" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3045" top="4350" width="0" height="0">
+   <BOUNDS type="Node" left="2745" top="4245" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -151,9 +151,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4275" top="4350" width="795" height="240">
+   <BOUNDS type="Box" left="3825" top="4245" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4275" top="4350" width="0" height="0">
+   <BOUNDS type="Node" left="3825" top="4245" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,0,0">
    </PIN>

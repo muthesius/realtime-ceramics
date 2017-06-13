@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
    <PATCH nodename="C:\Users\Student\Documents\Git\realtime-ceramics\RTC\PrinterController_0.1\PrinterController.v4p" scrollx="0" scrolly="-360" systemname="PrinterController" filename="C:\Users\Lars\OneDrive\Dokumente\my patches\PrinterControl\PrinterController.v4p">
-   <BOUNDS type="Window" left="-150" top="0" width="19620" height="9615">
+   <BOUNDS type="Window" left="-150" top="0" width="19620" height="9630">
    </BOUNDS>
    <PACK Name="addonpack" Version="34.1.0">
    </PACK>
@@ -285,7 +285,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8625" top="1005" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Delta">
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Descartes">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Printer Type|">
    </PIN>
@@ -335,9 +335,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="325" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="9060" top="4725" width="4560" height="285">
+   <BOUNDS type="Box" left="9315" top="4725" width="4560" height="285">
    </BOUNDS>
-   <BOUNDS type="Node" left="9060" top="4725" width="0" height="0">
+   <BOUNDS type="Node" left="9315" top="4725" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -395,9 +395,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="330" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="9420" top="4110" width="285" height="240">
+   <BOUNDS type="Box" left="9915" top="4065" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9420" top="4110" width="0" height="0">
+   <BOUNDS type="Node" left="9915" top="4065" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -419,7 +419,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.148648648648649">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.0337837837837843">
    </PIN>
    <PIN pinname="Show Slider" slicecount="1" values="1">
    </PIN>
@@ -427,7 +427,7 @@
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0.229166666666667">
+   <PIN pinname="X Input Value" slicecount="1" values="0.5">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ShowSlice">
    </PIN>
@@ -471,7 +471,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8700" top="5370" width="4675" height="5305">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="2850" width="8760" height="12150">
+   <BOUNDS type="Window" left="19275" top="0" width="12060" height="11340">
    </BOUNDS>
    <PIN pinname="xyz" visible="1" slicecount="36" values="0.59725568,0.16270536,-1,0.0728063466666667,0.65866711,-0.833333333333333,-0.45717632,0.145124693333333,-0.666666666666667,0.0123076799999999,-0.37573439,-0.5,0.486258346666667,0.09827736,-0.333333333333333,-0.03032432,0.569347443333333,-0.166666666666667,-0.53244032,0.0396633600000001,0,-0.0150896533333334,-0.48858739,0.166666666666667,0.53971968,0.0400666933333333,0.333333333333333,0.08740368,0.59592011,0.5,-0.390445653333333,0.13351936,0.666666666666667,0.11117168,-0.344948056666667,0.833333333333333">
    </PIN>
@@ -489,9 +489,9 @@
    <LINK srcnodeid="257" srcpinname="PreviewData" dstnodeid="336" dstpinname="Input">
    </LINK>
    <NODE systemname="Jaegerzaun" filename="gen\Jaegerzaun.v4p" nodename="gen\Jaegerzaun.v4p" componentmode="Hidden" id="365">
-   <BOUNDS type="Node" left="113" top="137" width="0" height="0">
+   <BOUNDS type="Node" left="120" top="135" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="0" width="9190" height="7350">
+   <BOUNDS type="Box" left="120" top="135" width="9190" height="7350">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="9190" height="7350">
    </BOUNDS>
@@ -511,9 +511,9 @@
    </PIN>
    </NODE>
    <NODE systemname="CrossGrid" filename="gen\CrossGrid.v4p" nodename="gen\CrossGrid.v4p" componentmode="Hidden" id="371">
-   <BOUNDS type="Node" left="2409" top="129" width="0" height="0">
+   <BOUNDS type="Node" left="2415" top="135" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1500" top="0" width="5520" height="5545">
+   <BOUNDS type="Box" left="2415" top="135" width="5520" height="5545">
    </BOUNDS>
    <BOUNDS type="Window" left="7980" top="3180" width="9480" height="6990">
    </BOUNDS>
@@ -535,9 +535,9 @@
    </PIN>
    </NODE>
    <NODE systemname="CrossGrid" filename="gen\CrossGrid.v4p" nodename="gen\CrossGrid.v4p" componentmode="Hidden" id="372">
-   <BOUNDS type="Node" left="1284" top="144" width="0" height="0">
+   <BOUNDS type="Node" left="1290" top="135" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="0" width="5520" height="5545">
+   <BOUNDS type="Box" left="1290" top="135" width="5520" height="5545">
    </BOUNDS>
    <BOUNDS type="Window" left="13500" top="6300" width="5520" height="5535">
    </BOUNDS>
@@ -551,13 +551,13 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="645" width="8245" height="6675">
    </BOUNDS>
-   <BOUNDS type="Window" left="3570" top="4035" width="12015" height="10710">
+   <BOUNDS type="Window" left="3570" top="4035" width="13920" height="10710">
    </BOUNDS>
-   <PIN pinname="E factor" slicecount="1" values="0.1" visible="1">
+   <PIN pinname="E factor" slicecount="1" visible="1" values="0.1">
    </PIN>
    <PIN pinname="Layer count" slicecount="1" visible="1" values="500">
    </PIN>
-   <PIN pinname="Resolution" slicecount="1" values="8">
+   <PIN pinname="Resolution" slicecount="1" values="4" visible="1">
    </PIN>
    <PIN pinname="Factor" slicecount="1" visible="1" values="1">
    </PIN>
@@ -581,7 +581,7 @@
    </BOUNDS>
    <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="3" values="50,50,50">
+   <PIN pinname="Y Input Value" slicecount="3" values="100,100,50">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>
@@ -631,9 +631,9 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="416">
-   <BOUNDS type="Node" left="2445" top="1050" width="100" height="100">
+   <BOUNDS type="Node" left="1710" top="990" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2445" top="1050" width="795" height="240">
+   <BOUNDS type="Box" left="1710" top="990" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Layer Height|">
    </PIN>
@@ -645,9 +645,9 @@
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="420">
-   <BOUNDS type="Node" left="2970" top="1605" width="100" height="100">
+   <BOUNDS type="Node" left="2220" top="1605" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2970" top="1605" width="795" height="240">
+   <BOUNDS type="Box" left="2220" top="1605" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Filament Diameter|">
    </PIN>
@@ -688,6 +688,50 @@
    <PIN pinname="Show Grid" slicecount="1" values="0">
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="428" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="765" top="2610" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="765" top="2610" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="7">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="428" srcpinname="Y Output Value" dstnodeid="405" dstpinname="Resolution">
+   </LINK>
+   <NODE systemname="CircularStar" filename="sub\CircularStar.v4p" nodename="sub\CircularStar.v4p" componentmode="Hidden" id="429">
+   <BOUNDS type="Node" left="3511" top="129" width="2145" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2610" top="0" width="8245" height="6675">
+   </BOUNDS>
+   <BOUNDS type="Window" left="3570" top="4035" width="13920" height="10710">
+   </BOUNDS>
+   <PIN pinname="E factor" slicecount="1" visible="1" values="0.1">
+   </PIN>
+   <PIN pinname="Layer count" slicecount="1" visible="1" values="500">
+   </PIN>
+   <PIN pinname="Resolution" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Factor" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="E spread" visible="1">
+   </PIN>
+   <PIN pinname="Layer Height" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Dimensions" visible="1" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Up" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Filament Diameter" slicecount="1" values="1">
    </PIN>
    </NODE>
    </PATCH>
